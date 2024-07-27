@@ -52,19 +52,20 @@ console.log(response.data);
 }
 
   return (
-    <div>
-        <Link to={'/'}>Back</Link>
-        <div
-      className="modal show"
+    <div className=' ' style={{marginTop:'100px'}}> 
+        <div 
+      className="modal show  text-white"
       style={{ display: 'block', position: 'initial' }}
     >
-      <Modal.Dialog>
-        <Modal.Header closeButton>
-          <Modal.Title>Update User</Modal.Title>
+      <Modal.Dialog >
+        <Modal.Header  className='bg-black text-white  '  style={{ backgroundColor: "#61FF7E" }}>
+        
+
+          <Modal.Title className=' text-white' > Update User</Modal.Title>
         </Modal.Header>
-<Modal.Body>
+<Modal.Body className='bg-dark' >
   <Form onSubmit={submitForm}>
-        <Form.Label htmlFor="fname">First name</Form.Label>
+        <Form.Label htmlFor="fname" className='text-white '>First name :</Form.Label>
 <Form.Control
   type="text"
   id="fname"
@@ -75,7 +76,7 @@ console.log(response.data);
  value={user.fname}
 />
 
-<Form.Label htmlFor="lname">Last name</Form.Label>
+<Form.Label htmlFor="lname" className='text-white mt-1'>Last name :</Form.Label>
 <Form.Control
   type="text"
   id="lname"
@@ -87,7 +88,7 @@ placeholder="Last Name"
 
 />
 
-<Form.Label htmlFor="email">Email</Form.Label>
+<Form.Label htmlFor="email" className='text-white mt-1'>Email :</Form.Label>
 <Form.Control
   type="email"
   id="email"
@@ -104,8 +105,9 @@ placeholder="Last Name"
               id="showPassword"
               label="Show Password"
               onChange={togglePasswordVisibility}
+              className='text-white mt-4 '
             />
-<Form.Label htmlFor="inputPassword5">Password</Form.Label>
+<Form.Label htmlFor="inputPassword5">Password :</Form.Label>
 <Form.Control
               name="password"
               type={showPassword ? 'text' : 'password'} // Toggle between 'text' and 'password'
@@ -118,8 +120,8 @@ placeholder="Last Name"
 
 
         <Modal.Footer>
-          <Button variant="secondary">Close</Button>
-          <Button type='submit' variant="primary">Update User</Button>
+          <Button variant="info" ><Link to={'/'} className='text-white' style={{textDecoration:'none'}}>Back to home</Link></Button>
+          <Button type='submit' variant="success">Update User</Button>
         </Modal.Footer>
         </Form>
         </Modal.Body>

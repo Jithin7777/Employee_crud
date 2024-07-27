@@ -1,4 +1,7 @@
 body {
   margin: 0;
+  color: #fff; /* White text color for contrast */
+  scroll-behavior: smooth;
 }
+
 
