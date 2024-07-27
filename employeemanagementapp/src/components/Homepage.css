@@ -1,11 +1,11 @@
-/* Default table styles */
+
 .table {
   width: 100%;
   margin-top: 10px;
   border-radius: 50px;
 }
 
-/* Default table header styles */
+
 .table th {
   background-color: #2f2c2c !important;
   padding: 8px;
@@ -13,22 +13,19 @@
   margin-top: -100px;
 }
 
-/* Default table cell styles */
+
 .table td {
   background-color: #0e0e0e !important;
   color: white;
   padding: 8px;
 }
 
-/* Styles for mobile views */
 @media (max-width: 768px) {
-  /* Set minimum height and enable scrolling for mobile devices */
   .table {
     min-height: 50vh;
     overflow-y: hidden;
   }
 
-  /* Style table cells for mobile */
   .table td {
     display: flex;
     text-align: center;
@@ -38,12 +35,10 @@
     align-items: baseline;
   }
 
-  /* Hide table headers on mobile */
   .table th {
     display: none;
   }
 
-  /* Add spacing between table rows on mobile */
   .table tr {
     margin-bottom: 10px;
   }
@@ -67,7 +62,7 @@
   }
 }
 
-/* Homepage.css */
 .custom-table tbody tr {
-  background-color: #070707; /* Set your desired background color here */
+  background-color: #070707; 
 }
+
